@@ -1,36 +1,15 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var React = __importStar(require("react"));
-var react_native_1 = require("react-native");
-var styles = react_native_1.StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#ccc",
-        justifyContent: "center",
-        alignItems: "center",
-    },
-});
-function App() {
-    return (React.createElement(react_native_1.View, { style: styles.container },
-        React.createElement(react_native_1.Text, null, "React Native App")));
-}
-exports.default = App;
+var react_1 = __importDefault(require("react"));
+var react_dom_1 = __importDefault(require("react-dom"));
+var App_1 = __importDefault(require("./App"));
+var reportWebVitals_1 = __importDefault(require("./reportWebVitals"));
+react_dom_1.default.render(react_1.default.createElement(react_1.default.StrictMode, null,
+    react_1.default.createElement(App_1.default, null)), document.getElementById("root"));
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals_1.default();
