@@ -1,20 +1,19 @@
-import * as React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import React from "react";
+import * as msTeams from "@microsoft/teams-js";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
+import Home from "./pages/Home";
+import Configure from "./pages/Configure";
 
-function App() {
+const App: React.FC = () => {
+  msTeams.initialize();
+
   return (
-    <View style={styles.container}>
-      <Text>React Native App</Text>
-    </View>
+    <Router>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/configure" component={Configure} />
+    </Router>
   );
-}
+};
 
 export default App;
