@@ -3,7 +3,7 @@ import * as msTeams from "@microsoft/teams-js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Configure from "./pages/Configure";
+import Page2 from "./pages/Page2";
 
 const App: React.FC = () => {
   msTeams.initialize();
@@ -11,7 +11,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <Route exact path="/" component={Home} />
-      <Route exact path="/configure" component={Configure} />
+      <Route exact path="/page2" component={Page2} />
     </Router>
   );
 };

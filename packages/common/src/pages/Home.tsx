@@ -15,7 +15,7 @@ const Home: React.FC<Props> = ({ name = "User", defaultCount = 0 }) => {
 
   return (
     <View style={styles.container}>
-      <Link to="./configure">Configure</Link>
+      <Link to="./page2">Page2</Link>
       <Text style={styles.greeting}>
         Hello {name}.
         <br />

@@ -1,23 +1,13 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { Link } from "react-router-dom";
-import * as msTeams from "@microsoft/teams-js";
+// import * as msTeams from "@microsoft/teams-js";
 
-export default function Configure() {
-  msTeams.settings.registerOnSaveHandler((saveEvent) => {
-    msTeams.settings.setSettings({
-      contentUrl: window.location.origin,
-      entityId: window.location.origin,
-    });
-
-    saveEvent.notifySuccess();
-  });
-  msTeams.settings.setValidityState(true);
-
+export default function Page2() {
   return (
     <View style={styles.container}>
       <Link to="./">Home</Link>
-      <Text style={styles.defaultText}>Configure</Text>
+      <Text style={styles.defaultText}>Page2</Text>
     </View>
   );
 }

@@ -12,7 +12,7 @@ var Home = function (_a) {
     var onIncrement = function () { return setCount(count + 1); };
     var onDecrement = function () { return setCount(count > 0 ? count - 1 : 0); };
     return (react_1.default.createElement(react_native_1.View, { style: styles.container },
-        react_1.default.createElement(react_router_dom_1.Link, { to: "./configure" }, "Configure"),
+        react_1.default.createElement(react_router_dom_1.Link, { to: "./page2" }, "Page2"),
         react_1.default.createElement(react_native_1.Text, { style: styles.greeting },
             "Hello ",
             name,

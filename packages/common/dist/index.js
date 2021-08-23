@@ -26,11 +26,11 @@ var react_1 = __importDefault(require("react"));
 var msTeams = __importStar(require("@microsoft/teams-js"));
 var react_router_dom_1 = require("react-router-dom");
 var Home_1 = __importDefault(require("./pages/Home"));
-var Configure_1 = __importDefault(require("./pages/Configure"));
+var Page2_1 = __importDefault(require("./pages/Page2"));
 var App = function () {
     msTeams.initialize();
     return (react_1.default.createElement(react_router_dom_1.BrowserRouter, null,
         react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/", component: Home_1.default }),
-        react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/configure", component: Configure_1.default })));
+        react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/page2", component: Page2_1.default })));
 };
 exports.default = App;
