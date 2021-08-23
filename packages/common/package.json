@@ -4,13 +4,14 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "postinstall": "npm run build",
     "build": "rimraf dist && tsc"
   },
   "dependencies": {
     "@microsoft/teams-js": "^1.10.0",
+    "@microsoft/teamsfx": "^0.2.5",
     "@types/react-router": "^5.1.16",
     "@types/react-router-dom": "^5.1.8",
+    "msteams-react-base-component": "^3.1.0",
     "react": "^17.0.2",
     "react-native": "^0.64.2",
     "react-native-web": "^0.17.1",
