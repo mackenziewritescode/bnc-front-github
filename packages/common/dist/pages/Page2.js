@@ -6,7 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var react_native_1 = require("react-native");
 var react_router_dom_1 = require("react-router-dom");
-// import * as msTeams from "@microsoft/teams-js";
 function Page2() {
     return (react_1.default.createElement(react_native_1.View, { style: styles.container },
         react_1.default.createElement(react_router_dom_1.Link, { to: "./" }, "Home"),

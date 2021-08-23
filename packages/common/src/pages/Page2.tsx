@@ -1,7 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { Link } from "react-router-dom";
-// import * as msTeams from "@microsoft/teams-js";
 
 export default function Page2() {
   return (
